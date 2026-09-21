@@ -1,0 +1,37 @@
+============================================
+             DRISHTI
+       Screening Demonstration Report
+============================================
+
+Patient ID          : DEMO-001
+Screening Status    : IMAGE ACCEPTED
+DR Grade (ICDR)     : 2
+Classification      : Moderate Non-Proliferative DR
+Prototype Confidence: 87.0%
+
+--------------------------------------------
+IMAGE QUALITY
+--------------------------------------------
+Focus Score        : 0.00018
+Brightness Score   : 0.399
+Dark Area Ratio    : 0.336
+
+--------------------------------------------
+EXPLAINABILITY
+--------------------------------------------
+Prototype evidence analysis completed.
+Evidence types visualized:
+ - Bright-region evidence
+ - Dark-region evidence
+ - Local-variation evidence
+Evidence map: explainability_map.png
+
+--------------------------------------------
+RECOMMENDATION
+--------------------------------------------
+Clinical review recommended based on screening result.
+
+============================================
+SIH26038 Prototype Demonstration
+Not intended for clinical diagnosis.
+============================================
