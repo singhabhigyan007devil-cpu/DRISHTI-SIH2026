@@ -9,9 +9,19 @@ fprintf('============================================\n\n');
 
 %% 1. LOAD FUNDUS IMAGE
 
-img = imread('../data/good/R.jpg');
-fprintf('[1/5] Fundus image loaded successfully.\n');
+[filename, pathname] = uigetfile( ...
+    {'*.jpg;*.jpeg;*.png', 'Fundus Images'}, ...
+    'Select Fundus Image');
 
+if isequal(filename, 0)
+    fprintf('\nNo image selected. Demo cancelled.\n');
+    return;
+end
+
+img = imread(fullfile(pathname, filename));
+
+fprintf('[1/5] Fundus image loaded successfully.\n');
+fprintf('Selected Image  : %s\n', filename);
 %% 2. IMAGE QUALITY GATE
 
 gray = im2double(rgb2gray(img));
@@ -197,7 +207,7 @@ sgtitle('DRISHTI - Prototype Suspected Evidence Map');
 saveas(gcf, '../results/explainability_map.png');
 %% 6. GENERATE SCREENING REPORT
 
-reportFile = '../results/RETINAWISE_AI_Report.txt';
+reportFile = '../results/DRISHTI_Report.txt';
 
 fileID = fopen(reportFile, 'w');
 
