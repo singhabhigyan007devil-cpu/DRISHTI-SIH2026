@@ -335,6 +335,7 @@ The MATLAB implementation is separated into individual modules so that component
 
 Future development may include:
 
+* Integration with IoT-enabled fundus imaging devices
 * Training and evaluation of dedicated DR classification models
 * Larger and more diverse retinal datasets
 * Cross-dataset validation
