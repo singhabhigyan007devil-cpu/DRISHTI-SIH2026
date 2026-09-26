@@ -408,7 +408,7 @@ Prototype outputs:
 
 ## 16. Project Team
 
-**DRISHTI — SIH 2026**
+**NETRA.AI — SIH 2026**
 
 Developed as an academic prototype for the Smart India Hackathon 2026 problem statement.
 
